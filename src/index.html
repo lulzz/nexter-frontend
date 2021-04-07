@@ -4,10 +4,290 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/imgs/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="scss/main.scss" />
     <title>Nexter</title>
   </head>
-  <body>
-    <h1>hello world</h1>
+  <body class="home">
+    <aside class="home__sidebar sidebar">
+      <button class="btn btn__nav">
+        <span class="btn__nav--line"></span>
+        <span class="btn__nav--line"></span>
+        <span class="btn__nav--line"></span>
+      </button>
+    </aside>
+    <header class="home__header header">
+      <img src="./assets/imgs/logo.png" alt="Firm logo" class="header__logo" />
+      <h3 class="header__subtitle h3">Your own home</h3>
+      <h1 class="header__title h1">The ultimate personal freedom</h1>
+      <button class="header__btn btn btn__cta">View our properties</button>
+      <div class="header__seenon">Seen on</div>
+      <div class="header__logos">
+        <img src="./assets/imgs/logo-bbc.png" alt="bbc logo" />
+        <img src="./assets/imgs/logo-forbes.png" alt="forbes logo" />
+        <img src="./assets/imgs/logo-techcrunch.png" alt="techcrunch logo" />
+        <img src="./assets/imgs/logo-bi.png" alt="busines insider logo" />
+      </div>
+    </header>
+    <section class="home__realtors realtors">
+      <h3 class="realtors__title">Top 3 realtors</h3>
+      <section class="agent-info">
+        <img
+          src="./assets/imgs/realtor-1.jpeg"
+          alt="realestate agen 1"
+          class="agent-info__img"
+        />
+        <h4 class="agent-info__name h4">Erik Feinman</h4>
+        <p class="agent-info__stats">245 houses sold</p>
+      </section>
+      <section class="agent-info">
+        <img
+          src="./assets/imgs/realtor-2.jpeg"
+          alt="realestate agen 1"
+          class="agent-info__img"
+        />
+        <h4 class="agent-info__name h4">Kim Brown</h4>
+        <p class="agent-info__stats">212 houses sold</p>
+      </section>
+      <section class="agent-info">
+        <img
+          src="./assets/imgs/realtor-3.jpeg"
+          alt="realestate agen 1"
+          class="agent-info__img"
+        />
+        <h4 class="agent-info__name h4">Toby Ramsey</h4>
+        <p class="agent-info__stats">199 houses sold</p>
+      </section>
+    </section>
+    <div class="home__features features">
+      <section class="features__feature feature">
+        <svg class="feature__icon">
+          <use href="./assets/imgs/sprite.svg#icon-global"></use>
+        </svg>
+        <h4 class="feature__title">World's best luxury homes</h4>
+        <p class="feature__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, autem
+          labore. Dicta, ipsum, aspernatur minima ullam doloribus voluptatibus
+          labore saepe alias ea nemo ut omnis ad? Eos ut tempora fugit!
+        </p>
+      </section>
+      <section class="features__feature feature">
+        <svg class="feature__icon">
+          <use href="./assets/imgs/sprite.svg#icon-map-pin"></use>
+        </svg>
+        <h4 class="feature__title">All homes in in top locations</h4>
+        <p class="feature__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, autem
+          labore. Dicta, ipsum, aspernatur minima ullam doloribus voluptatibus
+          labore saepe alias ea nemo ut omnis ad? Eos ut tempora fugit!
+        </p>
+      </section>
+      <section class="features__feature feature">
+        <svg class="feature__icon">
+          <use href="./assets/imgs/sprite.svg#icon-presentation"></use>
+        </svg>
+        <h4 class="feature__title">Top 1% realtors</h4>
+        <p class="feature__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, autem
+          labore. Dicta, ipsum, aspernatur minima ullam doloribus voluptatibus
+          labore saepe alias ea nemo ut omnis ad? Eos ut tempora fugit!
+        </p>
+      </section>
+      <section class="features__feature feature">
+        <svg class="feature__icon">
+          <use href="./assets/imgs/sprite.svg#icon-trophy"></use>
+        </svg>
+        <h4 class="feature__title">Only the best properties</h4>
+        <p class="feature__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, autem
+          labore. Dicta, ipsum, aspernatur minima ullam doloribus voluptatibus
+          labore saepe alias ea nemo ut omnis ad? Eos ut tempora fugit!
+        </p>
+      </section>
+      <section class="features__feature feature">
+        <svg class="feature__icon">
+          <use href="./assets/imgs/sprite.svg#icon-key"></use>
+        </svg>
+        <h4 class="feature__title">New home in one week</h4>
+        <p class="feature__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, autem
+          labore. Dicta, ipsum, aspernatur minima ullam doloribus voluptatibus
+          labore saepe alias ea nemo ut omnis ad? Eos ut tempora fugit!
+        </p>
+      </section>
+      <section class="features__feature feature">
+        <svg class="feature__icon">
+          <use href="./assets/imgs/sprite.svg#icon-lock"></use>
+        </svg>
+        <h4 class="feature__title">Secure payments on nexter</h4>
+        <p class="feature__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, autem
+          labore. Dicta, ipsum, aspernatur minima ullam doloribus voluptatibus
+          labore saepe alias ea nemo ut omnis ad? Eos ut tempora fugit!
+        </p>
+      </section>
+    </div>
+    <div class="home__story story">
+      <div class="story__content content">
+        <h3 class="content__subtitle">Happy customers</h3>
+        <h2 class="content__title">"The best decision of our lives"</h2>
+        <p class="content__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti id
+          veritatis autem, quia quasi cum aut numquam beatae nam reprehenderit.
+        </p>
+        <button class="btn btn__cta">Find your home</button>
+      </div>
+      <div class="story__pictures pictures">
+        <img
+          src="./assets/imgs/story-1.jpeg"
+          alt="story 1"
+          class="pictures__1"
+        />
+        <img
+          src="./assets/imgs/story-2.jpeg"
+          alt="story 2"
+          class="pictures__2"
+        />
+      </div>
+    </div>
+    <div class="home__homes homes">
+      <div class="homes__house house">
+        <section class="house__header">
+          <img
+            src="./assets/imgs/house-1.jpeg"
+            alt="house 1"
+            class="house__img"
+          />
+          <h5 class="house__title">Beautiful Familiy House</h5>
+        </section>
+        <p class="house__text house__place">usa</p>
+        <p class="house__text house__rooms">5 rooms</p>
+        <p class="house__text house__m2">325m<sup>2</sup></p>
+        <p class="house__text house__price">&dollar;1,200.000</p>
+        <button class="btn btn__cta house__btn">Contact realtor</button>
+      </div>
+      <div class="homes__house house">
+        <section class="house__header">
+          <img
+            src="./assets/imgs/house-2.jpeg"
+            alt="house 1"
+            class="house__img"
+          />
+          <h5 class="house__title">Moder glass villa</h5>
+        </section>
+        <p class="house__text house__place">Canada</p>
+        <p class="house__text house__rooms">6 rooms</p>
+        <p class="house__text house__m2">450m<sup>2</sup></p>
+        <p class="house__text house__price">&dollar;2,700.000</p>
+        <button class="btn btn__cta house__btn">Contact realtor</button>
+      </div>
+      <div class="homes__house house">
+        <section class="house__header">
+          <img
+            src="./assets/imgs/house-3.jpeg"
+            alt="house 1"
+            class="house__img"
+          />
+          <h5 class="house__title">Cozy country house</h5>
+        </section>
+        <p class="house__text house__place">uk</p>
+        <p class="house__text house__rooms">4 rooms</p>
+        <p class="house__text house__m2">250m<sup>2</sup></p>
+        <p class="house__text house__price">&dollar;850.000</p>
+        <button class="btn btn__cta house__btn">Contact realtor</button>
+      </div>
+      <div class="homes__house house">
+        <section class="house__header">
+          <img
+            src="./assets/imgs/house-4.jpeg"
+            alt="house 1"
+            class="house__img"
+          />
+          <h5 class="house__title">Large rustical villa</h5>
+        </section>
+        <p class="house__text house__place">Portugal</p>
+        <p class="house__text house__rooms">6 rooms</p>
+        <p class="house__text house__m2">480m<sup>2</sup></p>
+        <p class="house__text house__price">&dollar;1,950.000</p>
+        <button class="btn btn__cta house__btn">Contact realtor</button>
+      </div>
+      <div class="homes__house house">
+        <section class="house__header">
+          <img
+            src="./assets/imgs/house-5.jpeg"
+            alt="house 1"
+            class="house__img"
+          />
+          <h5 class="house__title">Majestic palace house</h5>
+        </section>
+        <p class="house__text house__place">Germany</p>
+        <p class="house__text house__rooms">18 rooms</p>
+        <p class="house__text house__m2">4230m<sup>2</sup></p>
+        <p class="house__text house__price">&dollar;9,500.000</p>
+        <button class="btn btn__cta house__btn">Contact realtor</button>
+      </div>
+      <div class="homes__house house">
+        <section class="house__header">
+          <img
+            src="./assets/imgs/house-2.jpeg"
+            alt="house 1"
+            class="house__img"
+          />
+          <h5 class="house__title">Modern family apartment</h5>
+        </section>
+        <p class="house__text house__place">Italy</p>
+        <p class="house__text house__rooms">3 rooms</p>
+        <p class="house__text house__m2">180m<sup>2</sup></p>
+        <p class="house__text house__price">&dollar;600.000</p>
+        <button class="btn btn__cta house__btn">Contact realtor</button>
+      </div>
+    </div>
+    <div class="house__gallery gallery">
+      <img src="./assets/imgs/gal-1.jpeg" alt="" class="gallery__img-1" />
+      <img src="./assets/imgs/gal-2.jpeg" alt="" class="gallery__img-2" />
+      <img src="./assets/imgs/gal-3.jpeg" alt="" class="gallery__img-3" />
+      <img src="./assets/imgs/gal-4.jpeg" alt="" class="gallery__img-4" />
+      <img src="./assets/imgs/gal-5.jpeg" alt="" class="gallery__img-5" />
+      <img src="./assets/imgs/gal-6.jpeg" alt="" class="gallery__img-6" />
+      <img src="./assets/imgs/gal-7.jpeg" alt="" class="gallery__img-7" />
+      <img src="./assets/imgs/gal-8.jpeg" alt="" class="gallery__img-8" />
+      <img src="./assets/imgs/gal-9.jpeg" alt="" class="gallery__img-9" />
+      <img src="./assets/imgs/gal-10.jpeg" alt="" class="gallery__img-10" />
+      <img src="./assets/imgs/gal-11.jpeg" alt="" class="gallery__img-11" />
+      <img src="./assets/imgs/gal-12.jpeg" alt="" class="gallery__img-12" />
+      <img src="./assets/imgs/gal-13.jpeg" alt="" class="gallery__img-13" />
+      <img src="./assets/imgs/gal-14.jpeg" alt="" class="gallery__img-14" />
+    </div>
+    <footer class="house__foooter footer">
+      <ul class="nav">
+        <li class="nav__item">
+          <a href="#" class="btn btn__link nav__link">Find your dream home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="btn btn__link nav__link">Request proposal</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="btn btn__link nav__link">Download home planner</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="btn btn__link nav__link">Contact us</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="btn btn__link nav__link">Submit your property</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="btn btn__link nav__link">Come work with us!</a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        &copy; Copyright 2017 by Jonas Schmedtmann. Feel free to use this
+        project for your own purposes. This does NOT apply if you plan to
+        produce your own course or tutorials based on this project.
+      </p>
+    </footer>
   </body>
 </html>

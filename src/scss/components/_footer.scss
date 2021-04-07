@@ -1,0 +1,11 @@
+.footer {
+  display: grid;
+  background-color: var(--clr-sec);
+  padding: 2rem;
+  row-gap: 5rem;
+
+  &__copyright {
+    text-align: center;
+    font-size: var(--fz-micro);
+  }
+}

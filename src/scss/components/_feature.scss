@@ -1,0 +1,27 @@
+.feature {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 'icon title' '. text';
+  column-gap: 2rem;
+  max-width: 350px;
+
+  &__icon {
+    grid-area: icon;
+    fill: var(--clr-prim);
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateY(-1rem);
+  }
+
+  &__title {
+    grid-area: title;
+    color: var(--clr-grey-dark-1);
+    font-size: var(--fz-tiny-plus);
+  }
+
+  &__text {
+    grid-area: text;
+    font-size: var(--fz-tiny-minus);
+  }
+}

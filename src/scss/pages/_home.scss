@@ -1,0 +1,55 @@
+.home {
+  //   &__sidebar {
+  //   }
+
+  //   &__header {
+  //   }
+
+  //   &__realtors {
+  //   }
+
+  &__features {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
+    // justify-content: center;
+    // justify-items: center;
+    // row-gap: 10rem;
+    // column-gap: 10rem;
+    padding: 15rem 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  //   &__story-pictures {
+  //   }
+
+  //   &__story-content {
+  //   }
+
+  &__homes {
+    padding: 10rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  //   &__gallery {
+  //   }
+
+  //   &__footer {
+  //   }
+}
+
+.homes {
+  &__house {
+    margin: 5rem;
+  }
+}
+
+.features {
+  &__feature {
+    margin: 5rem;
+  }
+}

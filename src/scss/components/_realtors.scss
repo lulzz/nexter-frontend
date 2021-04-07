@@ -1,0 +1,15 @@
+.realtors {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  row-gap: 3rem;
+
+  background-color: var(--clr-sec);
+  padding: 3.5rem 1rem;
+
+  &__title {
+    color: var(--clr-prim);
+    text-transform: uppercase;
+  }
+}

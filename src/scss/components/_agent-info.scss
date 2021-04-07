@@ -1,0 +1,30 @@
+.agent-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 'img name' 'img stats';
+  gap: 1rem;
+  align-items: center;
+
+  &__img {
+    grid-area: img;
+    display: block;
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  &__name {
+    grid-area: name;
+    align-self: end;
+    color: var(--clr-grey-light-1);
+  }
+
+  &__stats {
+    grid-area: stats;
+    align-self: start;
+    text-transform: uppercase;
+    color: var(--clr-grey-light-2);
+  }
+}

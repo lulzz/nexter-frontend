@@ -1,1 +1,17 @@
 @use './base/base';
+
+@use './abstracts/mixins';
+
+@use './components/sidebar';
+@use './components/btn';
+@use './components/header';
+@use './components/realtors';
+@use './components/agent-info';
+@use './components/feature';
+@use './components/story';
+@use './components/house';
+@use './components/gallery';
+@use './components/footer';
+@use './components/nav';
+
+@use './pages/home';

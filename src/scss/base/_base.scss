@@ -1,0 +1,106 @@
+// @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,400&family=Nunito:ital,wght@0,300;1,300&display=swap');
+
+:root {
+  // COLOR VARIABLES
+  --clr-prim: #c69963;
+  --clr-prim-dark: #b28451;
+
+  --clr-sec: #101d2c;
+
+  --clr-grey-light-1: #f9f7f6;
+  --clr-grey-light-2: #aaa;
+
+  --clr-grey-dark-1: #54483a;
+  --clr-grey-dark-2: #6d5d4b;
+
+  --clr-white: #fff;
+  --clr-black: #000;
+
+  // rgb colors
+  --rgb-clr-sec: 16, 29, 44;
+  --rgb-clr-prim: 198, 153, 99;
+  --rgb-white: 255, 255, 255;
+
+  // FONT VARIABLES
+  --f-prim: 'Nunito', sans-serif;
+  --f-display: 'Josefin Sans', sans-serif;
+
+  // font sizes
+  --fz-micro: 1.1rem;
+  --fz-tiny-minus: 1.3rem;
+  --fz-tiny: 1.4rem;
+  --fz-tiny-plus: 1.5rem;
+  --fz-base: 1.6rem;
+  --fz-base-plus: 1.7rem;
+
+  --fz-h1: 4.5rem;
+  --fz-h2: 3.2rem;
+  --fz-h3: 1.6rem;
+  --fz-h4: 1.9rem;
+  --fz-h5: 1.6rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--f-prim);
+  color: var(--clr-grey-dark-2);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: var(--fz-h1);
+  color: #f9f7f6;
+  line-height: 1;
+}
+
+h2 {
+  font-size: var(--fz-h2);
+}
+
+h3 {
+  font-size: var(--fz-h3);
+}
+
+h4 {
+  font-size: var(--fz-h4);
+}
+
+h5 {
+  font-size: var(--fz-h5);
+}
+
+.h3 {
+  font-size: var(--fz-base);
+  color: var(--clr-prim);
+  text-transform: uppercase;
+}

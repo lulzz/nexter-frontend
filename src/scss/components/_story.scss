@@ -1,18 +1,21 @@
-.story {
-  //   &__content {
-  //   }
+@use '../abstracts/mixins' as *;
 
-  //   &__pictures {
-  //   }
+.story {
+  @include mq(tab-l) {
+    display: grid;
+    height: 40vh;
+  }
 }
 
 .content {
   background-color: var(--clr-grey-light-1);
   padding: 4rem 1rem;
   display: grid;
+  grid-auto-rows: min-content;
   justify-content: center;
   justify-items: start;
-  grid-row-gap: 2rem;
+  align-content: center;
+  grid-row-gap: 5rem;
 
   &__subtitle {
     color: var(--clr-prim);

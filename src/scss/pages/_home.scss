@@ -1,53 +1,102 @@
+@use '../abstracts/mixins' as *;
 .home {
-  //   &__sidebar {
-  //   }
+  @include mq(tab-l) {
+    display: grid;
+    grid-template-rows: 6rem 80vh 1fr 45vh repeat(3, min-content);
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 14rem) [col-end]
+      )
+      [center-end] minmax(6rem, 1fr) [full-end];
+  }
 
-  //   &__header {
-  //   }
+  @include mq(d) {
+    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns:
+      [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+      [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+      [center-end] minmax(6rem, 1fr) [full-end];
+  }
 
-  //   &__realtors {
-  //   }
+  &__sidebar {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    padding: 2rem;
+
+    @include mq(d) {
+      grid-column: sidebar-start / sidebar-end;
+      grid-row: 1 / -1;
+    }
+  }
+
+  &__header {
+    grid-column: full-start / col-end 6;
+    grid-row: 2 / 3;
+
+    @include mq(d) {
+      grid-row: 1 / 2;
+    }
+  }
+
+  &__realtors {
+    grid-column: col-start 7 / full-end;
+    grid-row: 2 / 3;
+
+    @include mq(d) {
+      grid-row: 1 / 2;
+    }
+  }
 
   &__features {
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
-    // justify-content: center;
-    // justify-items: center;
-    // row-gap: 10rem;
-    // column-gap: 10rem;
-    padding: 15rem 1rem;
+    grid-column: full-start / full-end;
 
+    @include mq(d) {
+      grid-column: center-start / center-end;
+    }
+
+    padding: 15rem 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  //   &__story-pictures {
-  //   }
-
-  //   &__story-content {
-  //   }
+  &__story {
+    grid-column: full-start / full-end;
+  }
 
   &__homes {
+    grid-column: full-start / full-end;
+
+    @include mq(d) {
+      grid-column: center-start / center-end;
+    }
+
     padding: 10rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  //   &__gallery {
-  //   }
+  &__gallery {
+    grid-column: full-start / full-end;
+  }
 
-  //   &__footer {
-  //   }
+  &__footer {
+    grid-column: full-start / full-end;
+  }
 }
 
+//////////////////////////////////////////////////////////////////////
+// HOMES
 .homes {
   &__house {
     margin: 5rem;
   }
 }
 
+//////////////////////////////////////////////////////////////////////
+// FEATURES
 .features {
   &__feature {
     margin: 5rem;

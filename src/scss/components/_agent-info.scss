@@ -4,7 +4,8 @@
   grid-template-rows: auto auto;
   grid-template-areas: 'img name' 'img stats';
   gap: 1rem;
-  align-items: center;
+  align-items: top;
+  margin: 2rem;
 
   &__img {
     grid-area: img;

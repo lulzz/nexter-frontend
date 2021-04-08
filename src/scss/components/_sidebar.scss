@@ -1,9 +1,17 @@
+@use '../abstracts/mixins' as *;
+
 .sidebar {
   background-color: var(--clr-prim);
 
   display: grid;
-  height: 5rem;
   justify-content: end;
   align-content: center;
   padding-right: 2rem;
+
+  @include mq(d) {
+    padding-top: 3rem;
+    align-content: start;
+    padding-right: 0;
+    justify-content: center;
+  }
 }

@@ -3,8 +3,8 @@
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: 'icon title' '. text';
-  column-gap: 2rem;
-  max-width: 350px;
+  gap: 2rem;
+  max-width: 250px;
 
   &__icon {
     grid-area: icon;

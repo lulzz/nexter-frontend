@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .realtors {
   display: grid;
   justify-content: center;
@@ -6,10 +8,16 @@
   row-gap: 3rem;
 
   background-color: var(--clr-sec);
-  padding: 3.5rem 1rem;
+  padding: 4rem 1rem;
 
   &__title {
     color: var(--clr-prim);
     text-transform: uppercase;
+  }
+
+  &__agents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
